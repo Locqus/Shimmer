@@ -30,6 +30,16 @@
 		1899D27518BD201B0035A1B0 /* FBShimmeringView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1899D26818BD1CFB0035A1B0 /* FBShimmeringView.h */; };
 		1899D27618BD201B0035A1B0 /* FBShimmeringLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1899D26A18BD1CFB0035A1B0 /* FBShimmeringLayer.h */; };
 		ECEA610218A49C620064AFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEA610118A49C620064AFF4 /* Foundation.framework */; };
+		F8AB36961D78939A007DB57A /* Shimmering.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AB36951D78939A007DB57A /* Shimmering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AB369B1D7893A2007DB57A /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899D26718BD1CFB0035A1B0 /* FBShimmeringView.m */; };
+		F8AB369C1D7893A2007DB57A /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899D26918BD1CFB0035A1B0 /* FBShimmeringLayer.m */; };
+		F8AB369D1D7893A5007DB57A /* libFBShimmering.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEA60FE18A49C620064AFF4 /* libFBShimmering.a */; };
+		F8AB369E1D789427007DB57A /* FBShimmering.h in Headers */ = {isa = PBXBuildFile; fileRef = 1899D26D18BD1D070035A1B0 /* FBShimmering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AB369F1D789427007DB57A /* FBShimmeringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1899D26818BD1CFB0035A1B0 /* FBShimmeringView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AB36A01D789427007DB57A /* FBShimmeringLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1899D26A18BD1CFB0035A1B0 /* FBShimmeringLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8AB36A11D789434007DB57A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077ACA6B1CBD6B5800B3A708 /* CoreGraphics.framework */; };
+		F8AB36A21D789434007DB57A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077ACA691CBD6B4300B3A708 /* UIKit.framework */; };
+		F8AB36A31D789434007DB57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEA610118A49C620064AFF4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +82,9 @@
 		ECEA60FE18A49C620064AFF4 /* libFBShimmering.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBShimmering.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEA610118A49C620064AFF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECEA610518A49C620064AFF4 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		F8AB36931D78939A007DB57A /* Shimmering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shimmering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AB36951D78939A007DB57A /* Shimmering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shimmering.h; sourceTree = "<group>"; };
+		F8AB36971D78939A007DB57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +95,17 @@
 				077ACA6C1CBD6B5800B3A708 /* CoreGraphics.framework in Frameworks */,
 				077ACA6A1CBD6B4300B3A708 /* UIKit.framework in Frameworks */,
 				ECEA610218A49C620064AFF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AB368F1D78939A007DB57A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AB369D1D7893A5007DB57A /* libFBShimmering.a in Frameworks */,
+				F8AB36A11D789434007DB57A /* CoreGraphics.framework in Frameworks */,
+				F8AB36A21D789434007DB57A /* UIKit.framework in Frameworks */,
+				F8AB36A31D789434007DB57A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +120,7 @@
 				EC8BB5B318A5A1EE00EB2793 /* LICENSE */,
 				EC8BB5B418A5A1F500EB2793 /* PATENTS */,
 				ECEA610318A49C620064AFF4 /* FBShimmering */,
+				F8AB36941D78939A007DB57A /* Shimmering */,
 				ECEA610018A49C620064AFF4 /* Frameworks */,
 				ECEA60FF18A49C620064AFF4 /* Products */,
 			);
@@ -107,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				ECEA60FE18A49C620064AFF4 /* libFBShimmering.a */,
+				F8AB36931D78939A007DB57A /* Shimmering.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,7 +168,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F8AB36941D78939A007DB57A /* Shimmering */ = {
+			isa = PBXGroup;
+			children = (
+				F8AB36951D78939A007DB57A /* Shimmering.h */,
+				F8AB36971D78939A007DB57A /* Info.plist */,
+			);
+			path = Shimmering;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8AB36901D78939A007DB57A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AB36961D78939A007DB57A /* Shimmering.h in Headers */,
+				F8AB369E1D789427007DB57A /* FBShimmering.h in Headers */,
+				F8AB369F1D789427007DB57A /* FBShimmeringView.h in Headers */,
+				F8AB36A01D789427007DB57A /* FBShimmeringLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		ECEA60FD18A49C620064AFF4 /* FBShimmering */ = {
@@ -163,6 +212,24 @@
 			productReference = ECEA60FE18A49C620064AFF4 /* libFBShimmering.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		F8AB36921D78939A007DB57A /* Shimmering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AB369A1D78939A007DB57A /* Build configuration list for PBXNativeTarget "Shimmering" */;
+			buildPhases = (
+				F8AB368E1D78939A007DB57A /* Sources */,
+				F8AB368F1D78939A007DB57A /* Frameworks */,
+				F8AB36901D78939A007DB57A /* Headers */,
+				F8AB36911D78939A007DB57A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shimmering;
+			productName = Shimmering;
+			productReference = F8AB36931D78939A007DB57A /* Shimmering.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +239,11 @@
 				CLASSPREFIX = FB;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					F8AB36921D78939A007DB57A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
 			};
 			buildConfigurationList = ECEA60F918A49C620064AFF4 /* Build configuration list for PBXProject "FBShimmering" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -187,9 +259,20 @@
 			targets = (
 				ECEA60FD18A49C620064AFF4 /* FBShimmering */,
 				ECEA612C18A4A7360064AFF4 /* Framework */,
+				F8AB36921D78939A007DB57A /* Shimmering */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8AB36911D78939A007DB57A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		ECEA612718A49DDD0064AFF4 /* ShellScript */ = {
@@ -227,6 +310,15 @@
 			files = (
 				1899D26C18BD1CFB0035A1B0 /* FBShimmeringLayer.m in Sources */,
 				1899D26B18BD1CFB0035A1B0 /* FBShimmeringView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AB368E1D78939A007DB57A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AB369B1D7893A2007DB57A /* FBShimmeringView.m in Sources */,
+				F8AB369C1D7893A2007DB57A /* FBShimmeringLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +447,66 @@
 			};
 			name = Release;
 		};
+		F8AB36981D78939A007DB57A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Shimmering/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.Shimmering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8AB36991D78939A007DB57A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Shimmering/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.Shimmering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -381,6 +533,15 @@
 			buildConfigurations = (
 				ECEA612E18A4A7360064AFF4 /* Debug */,
 				ECEA612F18A4A7360064AFF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AB369A1D78939A007DB57A /* Build configuration list for PBXNativeTarget "Shimmering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AB36981D78939A007DB57A /* Debug */,
+				F8AB36991D78939A007DB57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
